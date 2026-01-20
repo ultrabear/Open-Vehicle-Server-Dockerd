@@ -1,3 +1,9 @@
+Dockerfile
+.dockerignore
+.git
+docker-compose.yml
+db
+
 # Server configuration
 v3/server/conf/ovms_server.conf
 v3/server/conf/*.pem
@@ -8,6 +14,3 @@ v3/shell/ovms_shell.conf
 # Local plugins
 v3/server/plugins/local/
 v3/server/httpfiles/
-
-# dbmate dump
-/db/schema.sql

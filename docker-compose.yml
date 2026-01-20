@@ -1,0 +1,5 @@
+
+services:
+  ovms_server:
+    build:
+      dockerfile: Dockerfile
