@@ -1,9 +1,9 @@
 FROM debian:trixie-slim
 
-COPY --from=amacneli/dbmate /usr/local/bin/dbmate /dbmate
+COPY --from=amacneil/dbmate /usr/local/bin/dbmate /dbmate
 
 WORKDIR /migrator
 
-COPY db db
+COPY . db
 
-RUN ["/dbmate", "up"]
+CMD ["/dbmate", "up"]

@@ -1,5 +1,7 @@
 
 services:
   ovms_server:
-    build:
-      dockerfile: Dockerfile
+    build: .
+
+  ovms_migrator:
+    build: db/.
