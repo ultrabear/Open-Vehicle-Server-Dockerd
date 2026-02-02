@@ -1,7 +1,11 @@
 
 services:
   ovms_server:
-    build: .
+    build: 
+      dockerfile: Dockerfile
+      platforms: ["linux/amd64", "linux/arm64"]
 
   ovms_migrator:
-    build: db/.
+    build:
+      dockerfile: db/Dockerfile
+      platforms: ["linux/amd64", "linux/arm64"]
