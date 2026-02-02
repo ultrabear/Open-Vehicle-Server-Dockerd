@@ -4,8 +4,10 @@ services:
     build: 
       dockerfile: Dockerfile
       platforms: ["linux/amd64", "linux/arm64"]
+    image: ultrabear/ovms_server
 
   ovms_migrator:
     build:
       dockerfile: db/Dockerfile
       platforms: ["linux/amd64", "linux/arm64"]
+    image: ultrabear/ovms_migrator
